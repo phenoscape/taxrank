@@ -4,12 +4,12 @@ idspace: TAXRANK
 base_url: /obo/taxrank
 
 products:
-- foorbar.owl: https://raw.githubusercontent.com/phenoscape/master/taxrank.owl
+- taxrank.owl: https://raw.githubusercontent.com/phenoscape/master/taxrank.owl
 - taxrank.obo: https://raw.githubusercontent.com/phenoscape/master/taxrank.obo
 
 term_browser: ontobee
 example_terms:
-- TAXRANK_0000000
+- TAXRANK_0000006
 
 entries:
 

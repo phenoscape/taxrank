@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: taxrank
-title: taxonomic-rank-ontology
+title: Taxonomic rank ontology
 jobs:
   - id: https://travis-ci.org/phenoscape/taxrank
     type: travis-ci
@@ -10,9 +10,9 @@ build:
   system: git
   path: "."
 contact:
-  email: cjmungall@lbl.gov
-  label: Chris Mungall
-description: taxonomic-rank-ontology is an ontology...
+  email: peteremidford@yahoo.com
+  label: Peter E. Midford
+description: Ontology of taxonomic ranks.
 domain: stuff
 homepage: https://github.com/phenoscape/taxrank
 products:
@@ -21,8 +21,8 @@ products:
 dependencies:
 tracker: https://github.com/phenoscape/taxrank/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 ---
 
-Enter a detailed description of your ontology here
+Ontology of taxonomic ranks.
