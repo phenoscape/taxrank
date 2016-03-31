@@ -1,7 +1,7 @@
 OBO=http://purl.obolibrary.org/obo
 ONT=taxrank
 BASE=$(OBO)/$(ONT)
-SRC=$(ONT)-edit.owl
+SRC=$(ONT)-edit.obo
 RELEASEDIR=../..
 ROBOT= robot
 OWLTOOLS= owltools
@@ -11,15 +11,14 @@ all: all_imports $(ONT).owl $(ONT).obo
 test: all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
-	cp imports/*{owl,obo} $(RELEASEDIR)/imports &&\
-	git add $(RELEASEDIR)/imports/*{obo,owl} &&\
 	(test -f subsets/*owl && cp subsets/*{owl,obo} $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 $(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK -s true annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT) convert -i $< -o $(ONT).owl
+	$(ROBOT) reason -i $(ONT).owl -r ELK -s true annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
-	$(ROBOT) convert -i $< -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $(OBO)
+	$(ROBOT) convert -i $< -o $(ONT).obo
 
 
 IMPORTS = 
