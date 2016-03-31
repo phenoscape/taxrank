@@ -17,10 +17,7 @@ entries:
   replacement: https://raw.githubusercontent.com/phenoscape/taxrank/v
 
 - prefix: /tracker/
-  replacement: https://code.google.com/p/cell-ontology/issues/detail?id=
-
-- prefix: /diffs/
-  replacement: https://cell-ontology.googlecode.com/svn/trunk/src/ontology/diffs/
+  replacement: https://github.com/phenoscape/taxrank/issues/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=TAXRANK&iri=http://purl.obolibrary.org/obo/
