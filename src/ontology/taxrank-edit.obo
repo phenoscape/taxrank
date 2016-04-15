@@ -433,6 +433,19 @@ xref: http://rs.tdwg.org/ontology/voc/TaxonRank#SupragenericTaxon
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: pmidford
 
+[Term]
+id: TAXRANK:0000059
+name: subform
+is_a: TAXRANK:0000000 ! taxonomic_rank
+created_by: pmidford
+
+[Term]
+id: TAXRANK:0000060
+name: no_rank
+def: "A token asserting that the taxon was not assigned a rank." [TAXRANK:curator]
+is_a: TAXRANK:0000000 ! taxonomic_rank
+created_by: pmidford
+
 [Typedef]
 id: TAXRANK:1000000
 name: has_rank
