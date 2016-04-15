@@ -11,7 +11,7 @@
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary</rdfs:comment>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:default-namespace>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2016-03-31/taxrank.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2016-04-15/taxrank.owl"/>
     </owl:Ontology>
     
 
@@ -906,6 +906,37 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000059">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subform</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000059</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000060">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no_rank</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A token asserting that the taxon was not assigned a rank.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000060</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A token asserting that the taxon was not assigned a rank.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:curator</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000060"/>
+    </owl:Axiom>
 </rdf:RDF>
 
 
