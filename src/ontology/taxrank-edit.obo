@@ -446,13 +446,12 @@ def: "A token asserting that the taxon was not assigned a rank." [TAXRANK:curato
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: pmidford
 
-
 [Term]
 id: TAXRANK:0001001
 name: strain
 xref: NCBITaxon:strain
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Azotobacter chroococcum (strain mcd 1) (NCBITaxon:355) is a strain"
+property_value: IAO:0000112 "Azotobacter chroococcum (strain mcd 1) (NCBITaxon:355) is a strain"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -460,7 +459,7 @@ id: TAXRANK:0001002
 name: isolate
 xref: NCBITaxon:isolate
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Plasmodium falciparum FCR-3/Gambia (NCBITaxon:5838) is an isolate"
+property_value: IAO:0000112 "Plasmodium falciparum FCR-3/Gambia (NCBITaxon:5838) is an isolate"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -468,7 +467,7 @@ id: TAXRANK:0001003
 name: serotype
 xref: NCBITaxon:serotype
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Bovine adenovirus 3 (NCBITaxon:10510) is a serotype"
+property_value: IAO:0000112 "Bovine adenovirus 3 (NCBITaxon:10510) is a serotype"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -476,7 +475,7 @@ id: TAXRANK:0001004
 name: clade
 xref: NCBITaxon:clade
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Embryophyta (NCBITaxon:3193) is a clade"
+property_value: IAO:0000112 "Embryophyta (NCBITaxon:3193) is a clade"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -484,7 +483,7 @@ id: TAXRANK:0001005
 name: forma specialis
 xref: NCBITaxon:forma_specialis
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Fusarium oxysporum f. sp. cucumerinum (NCBITaxon:5508) is a forma specialis"
+property_value: IAO:0000112 "Fusarium oxysporum f. sp. cucumerinum (NCBITaxon:5508) is a forma specialis"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -492,7 +491,7 @@ id: TAXRANK:0001006
 name: serogroup
 xref: NCBITaxon:serogroup
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Neisseria meningitidis serogroup B (NCBITaxon:491) is a serogroup"
+property_value: IAO:0000112 "Neisseria meningitidis serogroup B (NCBITaxon:491) is a serogroup"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -500,7 +499,7 @@ id: TAXRANK:0001007
 name: genotype
 xref: NCBITaxon: genotype
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Hepatitis C virus genotype 4 (NCBITaxon:33745) is a genotype"
+property_value: IAO:0000112 "Hepatitis C virus genotype 4 (NCBITaxon:33745) is a genotype"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -508,7 +507,7 @@ id: TAXRANK:0001008
 name: biotype
 xref: NCBITaxon: biotype
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Haemophilus influenzae biotype aegyptius (NCBITaxon:725) is a biotype"
+property_value: IAO:0000112 "Haemophilus influenzae biotype aegyptius (NCBITaxon:725) is a biotype"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -516,7 +515,7 @@ id: TAXRANK:0001009
 name: morph
 xref: NCBITaxon:morph
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Acontias orientalis morph lineacauda (NCBITaxon:304407) is a morph"
+property_value: IAO:0000112 "Acontias orientalis morph lineacauda (NCBITaxon:304407) is a morph"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -524,7 +523,7 @@ id: TAXRANK:0001010
 name: cohort
 xref: NCBITaxon:cohort
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Polyneoptera (NCBITaxon:33341) is a cohort"
+property_value: IAO:0000112 "Polyneoptera (NCBITaxon:33341) is a cohort"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -532,7 +531,7 @@ id: TAXRANK:0001011
 name: pathogroup
 xref: NCBITaxon:pathogroup
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Xanthomonas axonopodis subcluster 9.1 (NCBITaxon:1982676) is a pathogroup"
+property_value: IAO:0000112 "Xanthomonas axonopodis subcluster 9.1 (NCBITaxon:1982676) is a pathogroup"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
@@ -540,14 +539,7 @@ id: TAXRANK:0001012
 name: subcohort
 xref: NCBITaxon:subcohort
 is_a: TAXRANK:0000000 ! taxonomic_rank
-property_value: IAO_0000112 "Ostariophysi (NCBITaxon:32519) is a subcohort"
-created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
-
-[Term]
-id: TAXRANK:0001013
-name:
-xref: NCBITaxon:
-is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) is a subcohort"^^xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Typedef]
@@ -555,3 +547,7 @@ id: TAXRANK:1000000
 name: has_rank
 is_metadata_tag: true
 
+[Typedef]
+id: IAO:0000112
+name: example of usage
+is_metadata_tag: true
