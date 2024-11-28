@@ -3,6 +3,10 @@ data-version: 2013-11-10
 default-namespace: taxonomic_rank
 remark: To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
 ontology: taxrank
+idspace: dcterms http://purl.org/dc/terms/
+idspace: orcid https://orcid.org/
+property_value: dcterms:contributor orcid:0000-0001-6512-3296
+property_value: dcterms:contributor orcid:0000-0003-4423-4370
 
 [Term]
 id: TAXRANK:0000000
@@ -551,3 +555,4 @@ is_metadata_tag: true
 id: IAO:0000112
 name: example of usage
 is_metadata_tag: true
+namespace: iao

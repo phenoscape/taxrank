@@ -7,9 +7,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:orcid="https://orcid.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/taxrank.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2024-11-28/taxrank.owl"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6512-3296"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <oboInOwl:default-namespace>taxonomic_rank</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment>To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary</rdfs:comment>
@@ -31,7 +35,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>iao</oboInOwl:hasOBONamespace>
         <oboInOwl:id>IAO:0000112</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <rdfs:label>example of usage</rdfs:label>
@@ -55,6 +59,12 @@
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <rdfs:label>has_rank</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
