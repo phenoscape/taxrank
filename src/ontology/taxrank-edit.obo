@@ -7,6 +7,7 @@ idspace: dcterms http://purl.org/dc/terms/
 idspace: orcid https://orcid.org/
 property_value: dcterms:contributor orcid:0000-0001-6512-3296
 property_value: dcterms:contributor orcid:0000-0003-4423-4370
+property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
 
 [Term]
 id: TAXRANK:0000000
