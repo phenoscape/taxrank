@@ -1,9 +1,10 @@
 format-version: 1.2
-data-version: releases/2016-04-15
+data-version: releases/2024-11-28
 default-namespace: taxonomic_rank
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 remark: To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
 ontology: taxrank
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nSubClassOf(<http://purl.obolibrary.org/obo/TAXRANK_0000000> owl:Thing)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/TAXRANK_0000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/TAXRANK_0000000> (<http://purl.obolibrary.org/obo/TAXRANK_0000000>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/TAXRANK_0000000> owl:Thing)\n\n\n)
 
 [Term]
 id: TAXRANK:0000000
@@ -446,6 +447,107 @@ name: no_rank
 def: "A token asserting that the taxon was not assigned a rank." [TAXRANK:curator]
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: pmidford
+
+[Term]
+id: TAXRANK:0001001
+name: strain
+xref: NCBITaxon:strain
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Azotobacter chroococcum (strain mcd 1) (NCBITaxon:355) has rank strain" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001002
+name: isolate
+xref: NCBITaxon:isolate
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Plasmodium falciparum FCR-3/Gambia (NCBITaxon:5838) is an isolate" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001003
+name: serotype
+xref: NCBITaxon:serotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Bovine adenovirus 3 (NCBITaxon:10510) has rank serotype" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001004
+name: clade
+xref: NCBITaxon:clade
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Embryophyta (NCBITaxon:3193) has rank clade" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001005
+name: forma specialis
+xref: NCBITaxon:forma_specialis
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Fusarium oxysporum f. sp. cucumerinum (NCBITaxon:5508) has rank forma specialis" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001006
+name: serogroup
+xref: NCBITaxon:serogroup
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Neisseria meningitidis serogroup B (NCBITaxon:491) has rank serogroup" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001007
+name: genotype
+xref: NCBITaxon:genotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Hepatitis C virus genotype 4 (NCBITaxon:33745) has rank genotype" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001008
+name: biotype
+xref: NCBITaxon:biotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Haemophilus influenzae biotype aegyptius (NCBITaxon:725) has rank biotype" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001009
+name: morph
+xref: NCBITaxon:morph
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Acontias orientalis morph lineacauda (NCBITaxon:304407) has rank morph" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001010
+name: cohort
+xref: NCBITaxon:cohort
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Polyneoptera (NCBITaxon:33341) has rank cohort" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001011
+name: pathogroup
+xref: NCBITaxon:pathogroup
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Xanthomonas axonopodis subcluster 9.1 (NCBITaxon:1982676) has rank pathogroup" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001012
+name: subcohort
+xref: NCBITaxon:subcohort
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) has rank subcohort" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Typedef]
+id: IAO:0000112
+name: example of usage
+is_metadata_tag: true
 
 [Typedef]
 id: TAXRANK:1000000
