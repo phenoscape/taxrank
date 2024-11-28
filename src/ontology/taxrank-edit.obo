@@ -8,6 +8,7 @@ idspace: orcid https://orcid.org/
 property_value: dcterms:contributor orcid:0000-0001-6512-3296
 property_value: dcterms:contributor orcid:0000-0003-4423-4370
 property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
+property_value: IAO:0000700 TAXRANK:0000000
 
 [Term]
 id: TAXRANK:0000000
@@ -555,5 +556,11 @@ is_metadata_tag: true
 [Typedef]
 id: IAO:0000112
 name: example of usage
+is_metadata_tag: true
+namespace: iao
+
+[Typedef]
+id: IAO:0000700
+name: has ontology root term
 is_metadata_tag: true
 namespace: iao

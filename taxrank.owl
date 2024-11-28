@@ -12,6 +12,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/taxrank.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2024-11-28/taxrank.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6512-3296"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
@@ -48,6 +49,17 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <oboInOwl:hasOBONamespace>iao</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>IAO:0000700</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>has ontology root term</rdfs:label>
     </owl:AnnotationProperty>
     
 
