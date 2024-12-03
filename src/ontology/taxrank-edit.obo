@@ -3,6 +3,12 @@ data-version: 2013-11-10
 default-namespace: taxonomic_rank
 remark: To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
 ontology: taxrank
+idspace: dcterms http://purl.org/dc/terms/
+idspace: orcid https://orcid.org/
+property_value: dcterms:contributor orcid:0000-0001-6512-3296
+property_value: dcterms:contributor orcid:0000-0003-4423-4370
+property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
+property_value: IAO:0000700 TAXRANK:0000000
 
 [Term]
 id: TAXRANK:0000000
@@ -446,8 +452,115 @@ def: "A token asserting that the taxon was not assigned a rank." [TAXRANK:curato
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: pmidford
 
+[Term]
+id: TAXRANK:0001001
+name: strain
+xref: NCBITaxon:strain
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Azotobacter chroococcum (strain mcd 1) (NCBITaxon:355) has rank strain" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001002
+name: isolate
+xref: NCBITaxon:isolate
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Plasmodium falciparum FCR-3/Gambia (NCBITaxon:5838) is an isolate" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001003
+name: serotype
+xref: NCBITaxon:serotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Bovine adenovirus 3 (NCBITaxon:10510) has rank serotype" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001004
+name: clade
+xref: NCBITaxon:clade
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Embryophyta (NCBITaxon:3193) has rank clade" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001005
+name: forma specialis
+xref: NCBITaxon:forma_specialis
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Fusarium oxysporum f. sp. cucumerinum (NCBITaxon:5508) has rank forma specialis" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001006
+name: serogroup
+xref: NCBITaxon:serogroup
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Neisseria meningitidis serogroup B (NCBITaxon:491) has rank serogroup" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001007
+name: genotype
+xref: NCBITaxon:genotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Hepatitis C virus genotype 4 (NCBITaxon:33745) has rank genotype" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001008
+name: biotype
+xref: NCBITaxon:biotype
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Haemophilus influenzae biotype aegyptius (NCBITaxon:725) has rank biotype" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001009
+name: morph
+xref: NCBITaxon:morph
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Acontias orientalis morph lineacauda (NCBITaxon:304407) has rank morph" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001010
+name: cohort
+xref: NCBITaxon:cohort
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Polyneoptera (NCBITaxon:33341) has rank cohort" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001011
+name: pathogroup
+xref: NCBITaxon:pathogroup
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Xanthomonas axonopodis subcluster 9.1 (NCBITaxon:1982676) has rank pathogroup" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+[Term]
+id: TAXRANK:0001012
+name: subcohort
+xref: NCBITaxon:subcohort
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) has rank subcohort" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
 [Typedef]
 id: TAXRANK:1000000
 name: has_rank
 is_metadata_tag: true
 
+[Typedef]
+id: IAO:0000112
+name: example of usage
+is_metadata_tag: true
+namespace: iao
+
+[Typedef]
+id: IAO:0000700
+name: has ontology root term
+is_metadata_tag: true
+namespace: iao

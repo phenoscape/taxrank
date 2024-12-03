@@ -1,17 +1,24 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/taxrank.owl#"
      xml:base="http://purl.obolibrary.org/obo/taxrank.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:orcid="https://orcid.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/taxrank.owl">
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary</rdfs:comment>
-        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:default-namespace>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2016-04-15/taxrank.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2024-11-28/taxrank.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6512-3296"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <oboInOwl:default-namespace>taxonomic_rank</oboInOwl:default-namespace>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <rdfs:comment>To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary</rdfs:comment>
     </owl:Ontology>
     
 
@@ -27,10 +34,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <oboInOwl:hasOBONamespace>iao</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>IAO:0000112</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <oboInOwl:hasOBONamespace>iao</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>IAO:0000700</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>has ontology root term</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -38,17 +67,31 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_1000000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/TAXRANK_1000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_rank</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:1000000</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:1000000</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:label>has_rank</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -61,7 +104,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label>database_cross_reference</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -69,7 +112,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+        <rdfs:label>has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -77,7 +120,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+        <rdfs:label>has_obo_format_version</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -85,14 +128,16 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+        <rdfs:label>has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -122,17 +167,17 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A level of depth of a taxon in a taxonomic hierarchy.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000000</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>A level of depth of a taxon in a taxonomic hierarchy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000000</oboInOwl:id>
+        <rdfs:label>taxonomic_rank</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A level of depth of a taxon in a taxonomic hierarchy.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:curator</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A level of depth of a taxon in a taxonomic hierarchy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TAXRANK:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -140,13 +185,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phylum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:phylum</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000001</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">division</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Phylum</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:phylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Phylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>division</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000001</oboInOwl:id>
+        <rdfs:label>phylum</rdfs:label>
     </owl:Class>
     
 
@@ -154,12 +199,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000002">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">class</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:class</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000002</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Class</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:class</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Class</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000002</oboInOwl:id>
+        <rdfs:label>class</rdfs:label>
     </owl:Class>
     
 
@@ -167,12 +212,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:order</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000003</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Order</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:order</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Order</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000003</oboInOwl:id>
+        <rdfs:label>order</rdfs:label>
     </owl:Class>
     
 
@@ -180,12 +225,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000004">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:family</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000004</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Family</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:family</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Family</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000004</oboInOwl:id>
+        <rdfs:label>family</rdfs:label>
     </owl:Class>
     
 
@@ -193,12 +238,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:genus</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000005</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Genus</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:genus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Genus</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000005</oboInOwl:id>
+        <rdfs:label>genus</rdfs:label>
     </owl:Class>
     
 
@@ -206,12 +251,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:species</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000006</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Species</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:species</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Species</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000006</oboInOwl:id>
+        <rdfs:label>species</rdfs:label>
     </owl:Class>
     
 
@@ -219,12 +264,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subclass</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subclass</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000007</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subclass</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:subclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000007</oboInOwl:id>
+        <rdfs:label>subclass</rdfs:label>
     </owl:Class>
     
 
@@ -232,13 +277,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subphylum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subphylum</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000008</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#SubPhylum</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subdivision</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:subphylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SubPhylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>subdivision</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000008</oboInOwl:id>
+        <rdfs:label>subphylum</rdfs:label>
     </owl:Class>
     
 
@@ -246,12 +291,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subgenus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subgenus</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000009</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subgenus</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:subgenus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subgenus</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000009</oboInOwl:id>
+        <rdfs:label>subgenus</rdfs:label>
     </owl:Class>
     
 
@@ -259,11 +304,11 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species_group</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:species_group</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000010</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:species_group</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000010</oboInOwl:id>
+        <rdfs:label>species_group</rdfs:label>
     </owl:Class>
     
 
@@ -271,12 +316,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species_subgroup</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:species_subgroup</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000011</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species complex</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:species_subgroup</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>species complex</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000011</oboInOwl:id>
+        <rdfs:label>species_subgroup</rdfs:label>
     </owl:Class>
     
 
@@ -284,10 +329,10 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000012">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species_complex</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000012</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000012</oboInOwl:id>
+        <rdfs:label>species_complex</rdfs:label>
     </owl:Class>
     
 
@@ -295,12 +340,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infraorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:infraorder</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000013</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infraorder</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NCBITaxon:infraorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000013</oboInOwl:id>
+        <rdfs:label>infraorder</rdfs:label>
     </owl:Class>
     
 
@@ -308,13 +353,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suborder</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:suborder</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000014</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Suborder</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:suborder</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Suborder</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000014</oboInOwl:id>
+        <rdfs:label>suborder</rdfs:label>
     </owl:Class>
     
 
@@ -322,13 +367,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superclass</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:superclass</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000015</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Superclass</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:superclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000015</oboInOwl:id>
+        <rdfs:label>superclass</rdfs:label>
     </owl:Class>
     
 
@@ -336,13 +381,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">varietas</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:varietas</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000016</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variety</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:varietas</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>variety</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000016</oboInOwl:id>
+        <rdfs:label>varietas</rdfs:label>
     </owl:Class>
     
 
@@ -350,13 +395,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000017">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kingdom</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:kingdom</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000017</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Kingdom</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:kingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Kingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000017</oboInOwl:id>
+        <rdfs:label>kingdom</rdfs:label>
     </owl:Class>
     
 
@@ -364,13 +409,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superfamily</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:superfamily</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000018</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:superfamily</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000018</oboInOwl:id>
+        <rdfs:label>superfamily</rdfs:label>
     </owl:Class>
     
 
@@ -378,13 +423,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infraclass</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:infraclass</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000019</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infraclass</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:infraclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraclass</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000019</oboInOwl:id>
+        <rdfs:label>infraclass</rdfs:label>
     </owl:Class>
     
 
@@ -392,13 +437,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:superorder</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000020</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Superorder</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:superorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000020</oboInOwl:id>
+        <rdfs:label>superorder</rdfs:label>
     </owl:Class>
     
 
@@ -406,12 +451,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parvorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:parvorder</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000021</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:parvorder</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000021</oboInOwl:id>
+        <rdfs:label>parvorder</rdfs:label>
     </owl:Class>
     
 
@@ -419,13 +464,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superkingdom</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:superkingdom</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000022</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Superkingdom</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:superkingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superkingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000022</oboInOwl:id>
+        <rdfs:label>superkingdom</rdfs:label>
     </owl:Class>
     
 
@@ -433,13 +478,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subspecies</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subspecies</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000023</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subspecies</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subspecies</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subspecies</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000023</oboInOwl:id>
+        <rdfs:label>subspecies</rdfs:label>
     </owl:Class>
     
 
@@ -447,13 +492,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subfamily</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000024</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subfamily</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subfamily</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subfamily</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000024</oboInOwl:id>
+        <rdfs:label>subfamily</rdfs:label>
     </owl:Class>
     
 
@@ -461,13 +506,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tribe</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:tribe</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000025</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Tribe</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:tribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Tribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000025</oboInOwl:id>
+        <rdfs:label>tribe</rdfs:label>
     </owl:Class>
     
 
@@ -475,14 +520,14 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forma</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:forma</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000026</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">form</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Form</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:forma</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Form</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>form</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000026</oboInOwl:id>
+        <rdfs:label>forma</rdfs:label>
     </owl:Class>
     
 
@@ -490,14 +535,14 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superphylum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:superphylum</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000027</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Superphylum</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superdivision</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:superphylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superphylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>superdivision</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000027</oboInOwl:id>
+        <rdfs:label>superphylum</rdfs:label>
     </owl:Class>
     
 
@@ -505,13 +550,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000028">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtribe</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subtribe</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000028</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subtribe</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subtribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subtribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000028</oboInOwl:id>
+        <rdfs:label>subtribe</rdfs:label>
     </owl:Class>
     
 
@@ -519,13 +564,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000029">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subkingdom</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBITaxon:subkingdom</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000029</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subkingdom</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subkingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subkingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000029</oboInOwl:id>
+        <rdfs:label>subkingdom</rdfs:label>
     </owl:Class>
     
 
@@ -533,12 +578,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000030">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">section</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000030</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Section</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Section</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000030</oboInOwl:id>
+        <rdfs:label>section</rdfs:label>
     </owl:Class>
     
 
@@ -546,12 +591,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000031">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">series</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000031</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Series</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Series</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000031</oboInOwl:id>
+        <rdfs:label>series</rdfs:label>
     </owl:Class>
     
 
@@ -559,12 +604,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000032">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio-variety</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000032</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Bio-variety</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Bio-variety</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000032</oboInOwl:id>
+        <rdfs:label>bio-variety</rdfs:label>
     </owl:Class>
     
 
@@ -572,12 +617,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">candidate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000033</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Candidate</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Candidate</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000033</oboInOwl:id>
+        <rdfs:label>candidate</rdfs:label>
     </owl:Class>
     
 
@@ -585,12 +630,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cultivar</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000034</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000034</oboInOwl:id>
+        <rdfs:label>cultivar</rdfs:label>
     </owl:Class>
     
 
@@ -598,12 +643,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000035">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cultivar-group</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000035</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar-group</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar-group</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000035</oboInOwl:id>
+        <rdfs:label>cultivar-group</rdfs:label>
     </owl:Class>
     
 
@@ -611,12 +656,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denominationclass</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000036</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#DenominationClass</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#DenominationClass</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000036</oboInOwl:id>
+        <rdfs:label>denominationclass</rdfs:label>
     </owl:Class>
     
 
@@ -624,13 +669,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000037">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000037</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">empire</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Domain</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Domain</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>empire</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000037</oboInOwl:id>
+        <rdfs:label>domain</rdfs:label>
     </owl:Class>
     
 
@@ -638,12 +683,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000038">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">graft-chimaera</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000038</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Graft-chimaera</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Graft-chimaera</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000038</oboInOwl:id>
+        <rdfs:label>graft-chimaera</rdfs:label>
     </owl:Class>
     
 
@@ -651,12 +696,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000039">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grex</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000039</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Grex</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Grex</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000039</oboInOwl:id>
+        <rdfs:label>grex</rdfs:label>
     </owl:Class>
     
 
@@ -664,13 +709,13 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000040">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infraphylum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000040</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infraphylum</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infradivision</oboInOwl:hasExactSynonym>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraphylum</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>infradivision</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000040</oboInOwl:id>
+        <rdfs:label>infraphylum</rdfs:label>
     </owl:Class>
     
 
@@ -678,12 +723,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000041">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrafamily</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000041</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infrafamily</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infrafamily</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000041</oboInOwl:id>
+        <rdfs:label>infrafamily</rdfs:label>
     </owl:Class>
     
 
@@ -691,12 +736,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000042 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000042">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infragenerictaxon</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000042</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#InfragenericTaxon</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#InfragenericTaxon</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000042</oboInOwl:id>
+        <rdfs:label>infragenerictaxon</rdfs:label>
     </owl:Class>
     
 
@@ -704,12 +749,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000043">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infragenus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000043</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infragenus</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infragenus</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000043</oboInOwl:id>
+        <rdfs:label>infragenus</rdfs:label>
     </owl:Class>
     
 
@@ -717,12 +762,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000044">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infrakingdom</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000044</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infrakingdom</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infrakingdom</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000044</oboInOwl:id>
+        <rdfs:label>infrakingdom</rdfs:label>
     </owl:Class>
     
 
@@ -730,12 +775,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000045">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infraspecies</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000045</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infraspecies</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraspecies</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000045</oboInOwl:id>
+        <rdfs:label>infraspecies</rdfs:label>
     </owl:Class>
     
 
@@ -743,12 +788,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000046 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000046">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infraspecificTaxon</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000046</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#InfraspecificTaxon</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#InfraspecificTaxon</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000046</oboInOwl:id>
+        <rdfs:label>infraspecificTaxon</rdfs:label>
     </owl:Class>
     
 
@@ -756,12 +801,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infratribe</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000047</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Infratribe</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infratribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000047</oboInOwl:id>
+        <rdfs:label>infratribe</rdfs:label>
     </owl:Class>
     
 
@@ -769,12 +814,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000048">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patho-variety</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000048</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#patho-variety</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#patho-variety</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000048</oboInOwl:id>
+        <rdfs:label>patho-variety</rdfs:label>
     </owl:Class>
     
 
@@ -782,12 +827,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000049">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specialform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000049</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Specialform</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Specialform</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000049</oboInOwl:id>
+        <rdfs:label>specialform</rdfs:label>
     </owl:Class>
     
 
@@ -795,12 +840,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000050">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speciesaggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000050</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#SpeciesAggregate</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SpeciesAggregate</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000050</oboInOwl:id>
+        <rdfs:label>speciesaggregate</rdfs:label>
     </owl:Class>
     
 
@@ -808,12 +853,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000051">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subvariety</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000051</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000051</oboInOwl:id>
+        <rdfs:label>subvariety</rdfs:label>
     </owl:Class>
     
 
@@ -821,12 +866,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000052">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subsubvariety</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000052</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Sub-Variety</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Sub-Variety</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000052</oboInOwl:id>
+        <rdfs:label>subsubvariety</rdfs:label>
     </owl:Class>
     
 
@@ -834,12 +879,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000053">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subsection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000053</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subsection</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subsection</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000053</oboInOwl:id>
+        <rdfs:label>subsection</rdfs:label>
     </owl:Class>
     
 
@@ -847,12 +892,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000054">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subseries</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000054</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subseries</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subseries</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000054</oboInOwl:id>
+        <rdfs:label>subseries</rdfs:label>
     </owl:Class>
     
 
@@ -860,12 +905,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000055">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subspecificaggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000055</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#SubspecificAggregate</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SubspecificAggregate</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000055</oboInOwl:id>
+        <rdfs:label>subspecificaggregate</rdfs:label>
     </owl:Class>
     
 
@@ -873,12 +918,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000056">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subsubform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000056</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Subsubform</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subsubform</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000056</oboInOwl:id>
+        <rdfs:label>subsubform</rdfs:label>
     </owl:Class>
     
 
@@ -886,12 +931,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000057">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supertribe</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000057</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#Supertribe</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Supertribe</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000057</oboInOwl:id>
+        <rdfs:label>supertribe</rdfs:label>
     </owl:Class>
     
 
@@ -899,12 +944,12 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000058">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supragenerictaxon</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000058</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://rs.tdwg.org/ontology/voc/TaxonRank#SupragenericTaxon</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SupragenericTaxon</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000058</oboInOwl:id>
+        <rdfs:label>supragenerictaxon</rdfs:label>
     </owl:Class>
     
 
@@ -912,11 +957,11 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000059">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000059</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000059</oboInOwl:id>
+        <rdfs:label>subform</rdfs:label>
     </owl:Class>
     
 
@@ -924,22 +969,190 @@
     <!-- http://purl.obolibrary.org/obo/TAXRANK_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000060">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no_rank</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A token asserting that the taxon was not assigned a rank.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:0000060</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmidford</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxonomic_rank</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>A token asserting that the taxon was not assigned a rank.</obo:IAO_0000115>
+        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0000060</oboInOwl:id>
+        <rdfs:label>no_rank</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A token asserting that the taxon was not assigned a rank.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAXRANK:curator</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A token asserting that the taxon was not assigned a rank.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TAXRANK:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Azotobacter chroococcum (strain mcd 1) (NCBITaxon:355) has rank strain</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:strain</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001001</oboInOwl:id>
+        <rdfs:label>strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Plasmodium falciparum FCR-3/Gambia (NCBITaxon:5838) is an isolate</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:isolate</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001002</oboInOwl:id>
+        <rdfs:label>isolate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Bovine adenovirus 3 (NCBITaxon:10510) has rank serotype</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:serotype</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001003</oboInOwl:id>
+        <rdfs:label>serotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Embryophyta (NCBITaxon:3193) has rank clade</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:clade</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001004</oboInOwl:id>
+        <rdfs:label>clade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Fusarium oxysporum f. sp. cucumerinum (NCBITaxon:5508) has rank forma specialis</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:forma_specialis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001005</oboInOwl:id>
+        <rdfs:label>forma specialis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Neisseria meningitidis serogroup B (NCBITaxon:491) has rank serogroup</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:serogroup</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001006</oboInOwl:id>
+        <rdfs:label>serogroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Hepatitis C virus genotype 4 (NCBITaxon:33745) has rank genotype</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:genotype</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001007</oboInOwl:id>
+        <rdfs:label>genotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Haemophilus influenzae biotype aegyptius (NCBITaxon:725) has rank biotype</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:biotype</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001008</oboInOwl:id>
+        <rdfs:label>biotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Acontias orientalis morph lineacauda (NCBITaxon:304407) has rank morph</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:morph</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001009</oboInOwl:id>
+        <rdfs:label>morph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Polyneoptera (NCBITaxon:33341) has rank cohort</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:cohort</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001010</oboInOwl:id>
+        <rdfs:label>cohort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Xanthomonas axonopodis subcluster 9.1 (NCBITaxon:1982676) has rank pathogroup</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:pathogroup</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001011</oboInOwl:id>
+        <rdfs:label>pathogroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <obo:IAO_0000112>Ostariophysi (NCBITaxon:32519) has rank subcohort</obo:IAO_0000112>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subcohort</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001012</oboInOwl:id>
+        <rdfs:label>subcohort</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 0.0.1+6049ab4) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
