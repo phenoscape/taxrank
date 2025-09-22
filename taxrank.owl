@@ -667,6 +667,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:domain</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Domain</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>empire</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -851,6 +852,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:subvariety</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000051</oboInOwl:id>
@@ -1139,6 +1141,42 @@
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0001012</oboInOwl:id>
         <rdfs:label>subcohort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001013</oboInOwl:id>
+        <rdfs:label>realm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001014</oboInOwl:id>
+        <rdfs:label>acellular root</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>TAXRANK:0001015</oboInOwl:id>
+        <rdfs:label>cellular root</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
