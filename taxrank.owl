@@ -169,16 +169,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000000">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>A level of depth of a taxon in a taxonomic hierarchy.</obo:IAO_0000115>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000000</oboInOwl:id>
         <rdfs:label>taxonomic_rank</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A level of depth of a taxon in a taxonomic hierarchy.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TAXRANK:curator</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -186,6 +181,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:phylum</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Phylum</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>division</oboInOwl:hasExactSynonym>
@@ -354,7 +350,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:suborder</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Suborder</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -368,7 +364,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:superclass</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superclass</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -382,7 +378,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:varietas</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>variety</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -396,7 +392,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:kingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Kingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -410,7 +406,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:superfamily</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -424,7 +420,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:infraclass</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraclass</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -438,7 +434,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:superorder</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superorder</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -452,7 +448,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:parvorder</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000021</oboInOwl:id>
@@ -465,7 +461,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:superkingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superkingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -479,7 +475,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:subspecies</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subspecies</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -493,7 +489,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:subfamily</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subfamily</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -507,7 +503,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:tribe</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Tribe</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -521,7 +517,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:forma</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Form</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>form</oboInOwl:hasExactSynonym>
@@ -536,7 +532,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:superphylum</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Superphylum</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>superdivision</oboInOwl:hasExactSynonym>
@@ -551,7 +547,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:subtribe</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subtribe</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -565,7 +561,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>NCBITaxon:subkingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subkingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -579,7 +575,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Section</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000030</oboInOwl:id>
@@ -592,7 +588,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Series</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000031</oboInOwl:id>
@@ -605,7 +601,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Bio-variety</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000032</oboInOwl:id>
@@ -618,7 +614,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Candidate</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000033</oboInOwl:id>
@@ -631,7 +627,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000034</oboInOwl:id>
@@ -644,7 +640,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Cultivar-group</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000035</oboInOwl:id>
@@ -657,7 +653,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#DenominationClass</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000036</oboInOwl:id>
@@ -670,8 +666,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>NCBITaxon:domain</oboInOwl:hasDbXref>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Domain</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>empire</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -685,7 +680,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Graft-chimaera</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000038</oboInOwl:id>
@@ -698,7 +693,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Grex</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000039</oboInOwl:id>
@@ -711,7 +706,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraphylum</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>infradivision</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
@@ -725,7 +720,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infrafamily</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000041</oboInOwl:id>
@@ -738,7 +733,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#InfragenericTaxon</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000042</oboInOwl:id>
@@ -751,7 +746,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infragenus</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000043</oboInOwl:id>
@@ -764,7 +759,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infrakingdom</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000044</oboInOwl:id>
@@ -777,7 +772,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infraspecies</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000045</oboInOwl:id>
@@ -790,7 +785,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#InfraspecificTaxon</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000046</oboInOwl:id>
@@ -803,7 +798,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Infratribe</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000047</oboInOwl:id>
@@ -816,7 +811,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#patho-variety</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000048</oboInOwl:id>
@@ -829,7 +824,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Specialform</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000049</oboInOwl:id>
@@ -842,7 +837,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SpeciesAggregate</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000050</oboInOwl:id>
@@ -855,8 +850,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>NCBITaxon:subvariety</oboInOwl:hasDbXref>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000051</oboInOwl:id>
@@ -869,7 +863,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Sub-Variety</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000052</oboInOwl:id>
@@ -882,7 +876,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subsection</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000053</oboInOwl:id>
@@ -895,7 +889,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subseries</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000054</oboInOwl:id>
@@ -908,7 +902,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SubspecificAggregate</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000055</oboInOwl:id>
@@ -921,7 +915,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Subsubform</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000056</oboInOwl:id>
@@ -934,7 +928,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#Supertribe</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000057</oboInOwl:id>
@@ -947,7 +941,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasDbXref>http://rs.tdwg.org/ontology/voc/TaxonRank#SupragenericTaxon</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000058</oboInOwl:id>
@@ -960,7 +954,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000059</oboInOwl:id>
         <rdfs:label>subform</rdfs:label>
@@ -973,17 +967,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <obo:IAO_0000115>A token asserting that the taxon was not assigned a rank.</obo:IAO_0000115>
-        <oboInOwl:created_by>pmidford</oboInOwl:created_by>
+        <oboInOwl:created_by>orcid:0000-0001-6512-3296</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0000060</oboInOwl:id>
         <rdfs:label>no_rank</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000060"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A token asserting that the taxon was not assigned a rank.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TAXRANK:curator</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1151,42 +1139,6 @@
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0001012</oboInOwl:id>
         <rdfs:label>subcohort</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001013 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>TAXRANK:0001013</oboInOwl:id>
-        <rdfs:label>realm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>TAXRANK:0001014</oboInOwl:id>
-        <rdfs:label>acellular root</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>TAXRANK:0001015</oboInOwl:id>
-        <rdfs:label>cellular root</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
