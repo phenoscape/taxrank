@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-09-22
+data-version: releases/2025-09-24
 default-namespace: taxonomic_rank
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -292,6 +292,7 @@ id: TAXRANK:0000037
 name: domain
 synonym: "empire" EXACT []
 xref: http://rs.tdwg.org/ontology/voc/TaxonRank#Domain
+xref: NCBITaxon:domain
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0001-6512-3296
 
@@ -391,6 +392,7 @@ created_by: orcid:0000-0001-6512-3296
 id: TAXRANK:0000051
 name: subvariety
 xref: http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety
+xref: NCBITaxon:subvariety
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0001-6512-3296
 
@@ -550,6 +552,13 @@ name: subcohort
 xref: NCBITaxon:subcohort
 is_a: TAXRANK:0000000 ! taxonomic_rank
 property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) has rank subcohort" xsd:string
+created_by: orcid:0000-0003-4423-4370
+
+[Term]
+id: TAXRANK:0001013
+name: realm
+xref: NCBITaxon:realm
+is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0003-4423-4370
 
 [Typedef]
