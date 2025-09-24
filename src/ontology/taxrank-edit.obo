@@ -9,7 +9,7 @@ property_value: dcterms:contributor orcid:0000-0001-6512-3296
 property_value: dcterms:contributor orcid:0000-0003-4423-4370
 property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: IAO:0000700 TAXRANK:0000000
-property_value: IAO:0000700 TAXRANK:1000000
+property_value: IAO:0000700 TAXRANK:9000000
 
 [Term]
 id: TAXRANK:0000000
@@ -561,20 +561,21 @@ is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
-id: TAXRANK:1000000
+id: TAXRANK:9000000
 name: pseudorank
+def: "covers ranks in NCBI taxonomy that don't fit in the normal hierarchy" []
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
-id: TAXRANK:1000001
+id: TAXRANK:9000001
 name: acellular root
-is_a: TAXRANK:1000000 ! pseudorank
+is_a: TAXRANK:9000000 ! pseudorank
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
-id: TAXRANK:1000002
+id: TAXRANK:9000002
 name: cellular root
-is_a: TAXRANK:1000000 ! pseudorank
+is_a: TAXRANK:9000000 ! pseudorank
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Typedef]
