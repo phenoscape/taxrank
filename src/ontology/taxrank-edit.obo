@@ -555,18 +555,7 @@ created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 [Term]
 id: TAXRANK:0001013
 name: realm
-is_a: TAXRANK:0000000 ! taxonomic_rank
-created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
-
-[Term]
-id: TAXRANK:0001014
-name: acellular root
-is_a: TAXRANK:0000000 ! taxonomic_rank
-created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
-
-[Term]
-id: TAXRANK:0001015
-name: cellular root
+xref: NCBITaxon:realm
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 

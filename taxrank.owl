@@ -11,7 +11,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/taxrank.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2025-09-22/taxrank.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/taxrank/releases/2025-09-24/taxrank.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-6512-3296"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
@@ -1150,33 +1150,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
         <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>NCBITaxon:realm</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
         <oboInOwl:id>TAXRANK:0001013</oboInOwl:id>
         <rdfs:label>realm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>TAXRANK:0001014</oboInOwl:id>
-        <rdfs:label>acellular root</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TAXRANK_0001015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0001015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000000"/>
-        <oboInOwl:created_by>orcid:0000-0003-4423-4370</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace>taxonomic_rank</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>TAXRANK:0001015</oboInOwl:id>
-        <rdfs:label>cellular root</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
