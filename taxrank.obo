@@ -2,7 +2,6 @@ format-version: 1.2
 data-version: releases/2025-09-24
 default-namespace: taxonomic_rank
 idspace: dcterms http://purl.org/dc/terms/ 
-idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: orcid https://orcid.org/ 
 remark: To the extent possible under law, Peter E. Midford has waived all copyright and related or neighboring rights to the Taxonomic Rank Vocabulary (TAXRANK). This work is published from the United States. It is requested that users of this vocabulary cite it at the following URI: http://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
 ontology: taxrank
@@ -10,8 +9,7 @@ property_value: dcterms:contributor orcid:0000-0001-6512-3296
 property_value: dcterms:contributor orcid:0000-0003-4423-4370
 property_value: dcterms:license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: IAO:0000700 TAXRANK:0000000
-property_value: IAO:0000700 TAXRANK:1000000
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/TAXRANK_0000000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/TAXRANK_9000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/TAXRANK_0000000> (<http://purl.obolibrary.org/obo/TAXRANK_0000000>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/TAXRANK_0000000> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/TAXRANK_9000000> (<http://purl.obolibrary.org/obo/TAXRANK_9000000>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/TAXRANK_9000000> owl:Thing)\n\n\n)
+property_value: IAO:0000700 TAXRANK:9000000
 
 [Term]
 id: TAXRANK:0000000
