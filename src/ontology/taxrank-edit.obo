@@ -291,6 +291,7 @@ id: TAXRANK:0000037
 name: domain
 synonym: "empire" EXACT []
 xref: http://rs.tdwg.org/ontology/voc/TaxonRank#Domain
+xref: NCBITaxon:domain
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0001-6512-3296 ! Peter E. Midford
 
@@ -390,6 +391,7 @@ created_by: orcid:0000-0001-6512-3296 ! Peter E. Midford
 id: TAXRANK:0000051
 name: subvariety
 xref: http://rs.tdwg.org/ontology/voc/TaxonRank#Sub-Variety
+xref: NCBITaxon:subvariety
 is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0001-6512-3296 ! Peter E. Midford
 
@@ -549,6 +551,12 @@ name: subcohort
 xref: NCBITaxon:subcohort
 is_a: TAXRANK:0000000 ! taxonomic_rank
 property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) has rank subcohort" xsd:string
+created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
+
+id: TAXRANK:0001013
+name: realm
+xref: NCBITaxon:realm
+is_a: TAXRANK:0000000 ! taxonomic_rank
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
 [Term]
