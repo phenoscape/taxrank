@@ -553,6 +553,7 @@ is_a: TAXRANK:0000000 ! taxonomic_rank
 property_value: IAO:0000112 "Ostariophysi (NCBITaxon:32519) has rank subcohort" xsd:string
 created_by: orcid:0000-0003-4423-4370 ! Charles Tapley Hoyt
 
+[Term]
 id: TAXRANK:0001013
 name: realm
 xref: NCBITaxon:realm
